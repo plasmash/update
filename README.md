@@ -1,2 +1,2 @@
-# update
-Launchrctl plugin to fetch and install latest version of binaries
+# launchr-update
+Launchrctl plugin to fetch and install a latest version of launchr build.
