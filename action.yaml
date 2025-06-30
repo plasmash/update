@@ -1,0 +1,35 @@
+runtime: plugin
+action:
+  title: Update
+  description: "Downloads and installs a binary from a remote repository, with support for specific version targeting"
+  options:
+    - name: username
+      title: Username
+      description: Authentication username for accessing the repository
+      type: string
+      default: ""
+    - name: password
+      title: Password
+      description: Authentication password for accessing the repository
+      type: string
+      default: ""
+    - name: target
+      title: Target Version
+      description: Specific version to download and install
+      default: ""
+    - name: config
+      title: Config File
+      description: Path to configuration file containing update metadata
+      default: ""
+    - name: repository-url
+      title: Repository URL
+      description: Base URL of the repository where binaries are hosted
+      default: ""
+    - name: release-file-mask
+      title: Release File Mask
+      description: URL template for release metadata file. Available variables - [.URL}}, {{.Version}}, {{.OS}}, {{.Arch}}, {{.Ext}}. Example - {{.URL}}/release
+      default: ""
+    - name: bin-mask
+      title: Binary File Mask
+      description: URL template for binary download. Available variables - {{.URL}}, {{.Version}}, {{.OS}}, {{.Arch}}, {{.Ext}}. Example - {{.URL}}/{{.Version}}
+      default: ""
