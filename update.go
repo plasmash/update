@@ -219,7 +219,6 @@ func (u *updateAction) getCredentials() error {
 
 		if u.k.Exists() {
 			err = u.k.Save()
-			u.k.ResetStorage()
 		}
 	}
 
