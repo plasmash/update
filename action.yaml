@@ -27,9 +27,9 @@ action:
       default: ""
     - name: release-file-mask
       title: Release File Mask
-      description: URL template for release metadata file. Available variables - [.URL}}, {{.Version}}, {{.OS}}, {{.Arch}}, {{.Ext}}. Example - {{.URL}}/release
+      description: URL template for release metadata file (variables: .URL, .Version, .OS, .Arch, .Ext)
       default: ""
     - name: bin-mask
       title: Binary File Mask
-      description: URL template for binary download. Available variables - {{.URL}}, {{.Version}}, {{.OS}}, {{.Arch}}, {{.Ext}}. Example - {{.URL}}/{{.Version}}
+      description: URL template for binary download (variables: .URL, .Version, .OS, .Arch, .Ext)
       default: ""
